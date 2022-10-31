@@ -1,16 +1,5 @@
-
-import threading
-
-def print_test():
-    print('othre thread')
-    print('othre thread')
-    print('othre thread')
-
-def main():
-    print('this is main thread')
-    t = threading.Thread(target=print_test)
-    t.start()
-    t.join()
-
-if __name__ == '__main__':
-    main()
+import sys
+if __name__ == "__main__":
+   print(sys.argv[1:])
+   print('中文测试')
+   print("中文测试")
